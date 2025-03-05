@@ -1,0 +1,23 @@
+pipeline
+{
+agent any
+stages{
+steps
+{
+git "
+}
+}
+stage('build')
+{
+steps{
+sh 'javac hello.java'
+}
+}
+stage('run')
+{
+steps{
+sh 'java hello'
+}
+}
+}
+}
